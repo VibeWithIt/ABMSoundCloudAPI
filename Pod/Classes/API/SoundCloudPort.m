@@ -228,6 +228,32 @@ NSString *PROVIDER_IDENTIFIER = @"SoundClount_Crendentials";
 	[self setLastURLSessionDataTask:nil];
 }
 
+#pragma mark - Repost
+-(void)repostSongToUserWallWithId:(NSString *)songID
+					  withSuccess:(void (^)(NSDictionary *songDict))successBlock
+						  failure:(void (^)(NSError *error))failureBlock
+{
+	NSString *path = [NSString stringWithFormat:@"/me/track_reposts/%@", songID];
+	NSDictionary *params = @{@"oauth_token": self.credentials.accessToken};
+	
+	self.lastURLSessionDataTask = [self.oAuth2Manager PUT:path parameters:params success:^(NSDictionary *jsonResponse) {
+		if ([jsonResponse isKindOfClass:[NSDictionary class]])
+		{
+			if (successBlock)
+			{
+				successBlock(jsonResponse);
+			}
+		}
+		else
+		{
+			if (failureBlock)
+			{
+				failureBlock([NSError createParsingError]);
+			}
+		}
+	} failure:failureBlock];
+}
+
 #pragma mark - webURLForLogin
 - (NSString *)webURLForLogin {
 	return [NSString stringWithFormat:@"https://soundcloud.com/connect?client_id=%@&response_type=code",self.oAuth2Manager.clientId];

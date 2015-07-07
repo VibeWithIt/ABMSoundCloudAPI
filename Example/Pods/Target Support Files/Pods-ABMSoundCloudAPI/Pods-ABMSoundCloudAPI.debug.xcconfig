@@ -1,6 +1,6 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ABMSoundCloudAPI" "${PODS_ROOT}/Headers/Public/NSURLSession-Resplendent"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/ABMSoundCloudAPI" -isystem "${PODS_ROOT}/Headers/Public/NSURLSession-Resplendent"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-ABMSoundCloudAPI-ABMSoundCloudAPI" -l"Pods-ABMSoundCloudAPI-NSURLSession-Resplendent"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ABMSoundCloudAPI" "${PODS_ROOT}/Headers/Public/NSURLSession-Resplendent" "${PODS_ROOT}/Headers/Public/SVProgressHUD" "${PODS_ROOT}/Headers/Public/UIAlertView-Blocks"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/ABMSoundCloudAPI" -isystem "${PODS_ROOT}/Headers/Public/NSURLSession-Resplendent" -isystem "${PODS_ROOT}/Headers/Public/SVProgressHUD" -isystem "${PODS_ROOT}/Headers/Public/UIAlertView-Blocks"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-ABMSoundCloudAPI-ABMSoundCloudAPI" -l"Pods-ABMSoundCloudAPI-NSURLSession-Resplendent" -l"Pods-ABMSoundCloudAPI-SVProgressHUD" -l"Pods-ABMSoundCloudAPI-UIAlertView-Blocks" -framework "QuartzCore"
 OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
 PODS_ROOT = ${SRCROOT}/Pods

@@ -18,3 +18,15 @@
 #define COCOAPODS_VERSION_MINOR_NSURLSession_Resplendent 1
 #define COCOAPODS_VERSION_PATCH_NSURLSession_Resplendent 5
 
+// SVProgressHUD
+#define COCOAPODS_POD_AVAILABLE_SVProgressHUD
+#define COCOAPODS_VERSION_MAJOR_SVProgressHUD 1
+#define COCOAPODS_VERSION_MINOR_SVProgressHUD 1
+#define COCOAPODS_VERSION_PATCH_SVProgressHUD 3
+
+// UIAlertView-Blocks
+#define COCOAPODS_POD_AVAILABLE_UIAlertView_Blocks
+#define COCOAPODS_VERSION_MAJOR_UIAlertView_Blocks 1
+#define COCOAPODS_VERSION_MINOR_UIAlertView_Blocks 0
+#define COCOAPODS_VERSION_PATCH_UIAlertView_Blocks 0
+

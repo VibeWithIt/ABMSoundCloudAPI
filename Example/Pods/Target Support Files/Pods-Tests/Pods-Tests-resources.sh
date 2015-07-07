@@ -59,10 +59,12 @@ install_resource()
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "../../Pod/Classes/Views/SoundCloudLogin.storyboard"
+  install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
   install_resource "${BUILT_PRODUCTS_DIR}/NSURLSession-Resplendent.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "../../Pod/Classes/Views/SoundCloudLogin.storyboard"
+  install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
   install_resource "${BUILT_PRODUCTS_DIR}/NSURLSession-Resplendent.bundle"
 fi
 

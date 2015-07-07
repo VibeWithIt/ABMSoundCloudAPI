@@ -2,9 +2,13 @@ PODS:
   - ABMSoundCloudAPI (0.1.1):
     - NSURLSession-Resplendent (~> 0.1.4)
   - NSURLSession-Resplendent (0.1.5)
+  - SVProgressHUD (1.1.3)
+  - UIAlertView-Blocks (1.0)
 
 DEPENDENCIES:
   - ABMSoundCloudAPI (from `../`)
+  - SVProgressHUD (~> 1.1)
+  - UIAlertView-Blocks (~> 1.0)
 
 EXTERNAL SOURCES:
   ABMSoundCloudAPI:
@@ -13,5 +17,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   ABMSoundCloudAPI: 1b5ff69f118cea6a5a142cd909092ebf7ac85aa1
   NSURLSession-Resplendent: 7a1472ba791b27a931d7d4b03ea3821366f24327
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  UIAlertView-Blocks: 7904744fca618afbd2ec646608924f5e69d5acd1
 
 COCOAPODS: 0.37.2
